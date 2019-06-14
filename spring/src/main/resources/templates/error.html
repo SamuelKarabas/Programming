@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="author" th:content="${author}">
+
+    <title>Error</title>
+
+    <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/colors/default.css" id="theme" rel="stylesheet">
+</head>
+
+<body>
+<!-- Preloader -->
+<section class="error-page" id="wrapper">
+    <div class="error-box">
+        <div class="error-body text-center">
+            <h1 class="text-danger" th:text="${code}">404</h1>
+            <h3 class="text-uppercase" th:text="${error}">Page Not Found !</h3>
+            <p class="text-muted m-t-30 m-b-30">YOU SEEM TO BE TRYING TO FIND A WAY HOME</p>
+            <a class="btn btn-danger btn-rounded waves-effect waves-light m-b-40" href="/">Back to home</a></div>
+        <footer class="footer text-center">2019 © <span th:text="${author}"></span></footer>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
